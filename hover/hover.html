@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: goldenrod;
+        }
+
+        .tanvir:hover{
+            color: blueviolet;
+            background-color: cadetblue;
+            font-size: 50px;
+        }
+
+        input:focus{
+            font-weight:700;
+            color: red;
+            font-size: 30px;
+            
+        }
+
+        li:nth-child(2n){
+            background-color: blue;
+            margin-right: 50%;
+        }
+
+        
+        p::before{
+            content: " Hello";
+            color: red;
+        }
+
+        body{
+            counter-reset: section;
+        }
+
+        p::before{
+            counter-increment: section;
+            content: "item" counter(section)":";
+        }
+    </style>
+</head>
+<body>
+    <h1>mahi class</h1>
+    <h1 class = "tanvir">tanvir class</h1>
+    <h1>sohan class</h1>
+
+    <input name = "email" type="text">
+    <br>
+    <input name = "email" type="text">
+
+    <ul>
+        <p> asd</p>
+        <p> ert</p>
+        <p> tyu</p>
+        
+</body>
+</html>
